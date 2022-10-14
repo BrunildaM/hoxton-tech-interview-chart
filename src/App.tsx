@@ -62,8 +62,8 @@ function App() {
           const newStudent = {
             name: e.target.name.value,
             submissions: {
-              beavers: e.target.beavers.value,
-              stars:e.target.stars.value
+              beavers: Number(e.target.beavers.value),
+              stars:Number(e.target.stars.value)
             }
           }
          const newStudentsData = [...students,newStudent]
